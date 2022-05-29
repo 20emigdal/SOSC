@@ -24,7 +24,7 @@ def find_city(link):
 	print(cities)
 	writer.writerow(cities)
 
-for i in range(634,754):
+for i in range(700,781):
 	url = 'https://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=' + str(i+1) + '&f=G&l=50&d=PTXT&p=1&S1=((((%22San+Francisco%22.ASCI.)+AND+%40AD%3E%3D20200315%3C%3D20220522)+AND+US.INCO.)+AND+(G06$.CPCL.+OR+H04L.CPCL.))&OS=AC/%22San+Francisco%22+and+APD/3/15/2020-%3E5/22/2022+and+ICN/US+and+(CPCL/G06$+or+CPCL/H04L)&RS=(((AC/%22San+Francisco%22+AND+APD/20200315-%3E20220522)+AND+ICN/US)+AND+(CPCL/G06$+OR+CPCL/H04L))'
 	find_city(url)
 	
